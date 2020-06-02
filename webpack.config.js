@@ -8,6 +8,11 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'build'),
   },
+
+  externals: [
+    require('webpack-require-http')
+  ],
+
   plugins: [
 
     new HtmlWebpackPlugin({
